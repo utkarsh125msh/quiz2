@@ -19,8 +19,9 @@ import org.springframework.web.bind.annotation.CrossOrigin;
 
 
 @RestController
+@CrossOrigin(origins="*",allowedHeaders = "*")
 @RequestMapping("Question")
-    @CrossOrigin(origins = "https://quiz-app2024.vercel.app") // Replace with your frontend URL
+    //@CrossOrigin(origins = "https://quiz-app2024.vercel.app") // Replace with your frontend URL
 
 public class QuesController {
     
